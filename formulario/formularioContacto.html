@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+ <head>
+ <meta charset="utf-8">
+ <title>Formulario Contacto. Enciclopedia Virtual de Medicina</title>
+ </head>
+ <body>
+ <header>
+   <h1>Enciclopedia Virtual de Medicina</h1>
+   <a href= "../index.html">
+    <img src="../imagenes/logoMedline.jpg"
+	alt="logo de la enciclopedia médica de MedlinePlus">
+	</a>
+</header>
+<main>
+    <h2>Formulario de Contacto</h2>
+    <p>Rellene los siguientes campos para realizar el formulario.</p>
+    <p>Los campos obligatorios marcados con (*) </p>
+    <form action="paginaRespuestaFormulario.html" method="get">
+        <p>
+            <label for="asunto">Asunto (*) :</label>
+            <input type="text" id="asunto" name="asunto" required>
+			Introduzca texto
+        </p>
+
+        <p>
+            <label for="comentario">Comentario (*) :</label>
+            <textarea id="comentario" name="comentario" required></textarea>
+			Introduzca texto
+        </p>
+
+        <p>
+            <label for="rol">Yo soy:</label>
+            <select id="rol" name="rol">
+                <option value="">Seleccione una opción</option>
+                <option value="Paciente">Paciente</option>
+                <option value="Científico">Científico</option>
+                <option value="Médico">Médico</option>
+                <option value="Educador">Educador</option>
+                <option value="Fabricante">Fabricante</option>
+                <option value="Periodista">Periodista</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+        </p>
+        
+        <fieldset>
+            <legend>Sexo (*) :</legend>
+            <div>
+                <label for="sexo-hombre"><input type="radio" id="sexo-hombre" name="sexo" value="hombre" required> Hombre</label>
+            </div>
+            <div>
+                <label for="sexo-mujer"><input type="radio" id="sexo-mujer" name="sexo" value="mujer"> Mujer</label>
+            </div>
+            <div>
+                <label for="sexo-otro"><input type="radio" id="sexo-otro" name="sexo" value="otro"> Otro</label>
+            </div>
+        </fieldset>
+
+        <p>
+            <label for="correo-electronico">Correo electrónico:</label>
+            <input type="email" id="correo-electronico" name="correo-electronico">
+		Introduzca una dirección de correo electrónico (debe incluir @)	
+        </p>
+
+        <p>
+            <label for="informacion">Deseo recibir más información <input type="checkbox" id="informacion" name="informacion"></label>
+        </p>
+        
+        <input type="submit" value="Enviar">
+		<input type="reset" value="Reset">
+    </form>
+</main>
+
+<footer>
+	<p><i>&copy; Enciclopedia Médica. Derechos reservados.</i></p>
+    <p>2024 Marcos Sánchez Rosillo y Cristian Martínez Hernández.</p>
+    <p>Universidad de Alicante - Ingeniería Biomédica</p>
+</footer>
+</body>
+</html>
