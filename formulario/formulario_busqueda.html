@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+ <html lang="es">
+ <head>
+ <meta charset="utf-8">
+ <title>Formulario de Busqueda de la Enciclopedia Virtual de Medicina</title>
+ <link href="../css/estilo.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ </head>
+ <body>
+ 
+
+  <header>
+   <div id="skip"><a href="#content">Saltar al contenido principal</a></div>
+    <h1>Enciclopedia Virtual de Medicina</h1>
+    <figure>
+      <a href="../index.html">
+        <img src="../imagenes/logoMedline.jpg" alt="logo de la enciclopedia médica de MedlinePlus">
+      </a>
+    </figure>
+  </header>
+
+  <main id="content">
+  
+    <nav>
+      <p>Estás en: 
+        <a href="../index.html">Página principal</a> >
+        <a href="../formulario/formulario_busqueda.html">Formulario Búsqueda de Artículos</a> 
+      </p>
+    </nav>
+	
+    
+    <form action="pagina_busqueda.html" method="get">
+	
+	<h2>Página de Búsqueda de Artículos</h2>
+    <p>Rellene los siguientes campos para realizar su búsqueda. Todos ellos deben ser rellenados con texto proporcionando información clara y detallada.</p>
+    <p>Los campos obligatorios están marcados con (*)</p>
+      <div class="icono">
+        <label for="Descripción"><i class="fas fa-search"></i> Descripción del artículo (*) :</label>
+        <textarea id="Descripción" name="descripcion" placeholder="Introduzca la descripción del artículo" required></textarea>
+      </div>
+      
+      <div class="icono">
+        <label for="Causas"><i class="fas fa-exclamation-circle"></i> Causas :</label>
+        <textarea id="Causas" name="causas" placeholder="Introduzca las causas"></textarea>
+      </div>
+      
+      <div class="icono">
+        <label for="Síntomas">🦠 Síntomas de la enfermedad :</label>
+        <textarea id="Síntomas" name="sintomas" placeholder="Introduzca los síntomas"></textarea>
+      </div>
+      
+      <div class="icono">
+        <label for="Pruebas_y_Exámenes"><i class="fas fa-stethoscope"></i> Pruebas y exámenes :</label>
+        <textarea id="Pruebas_y_Exámenes" name="pruebas_y_examenes" placeholder="Introduzca las pruebas y exámenes"></textarea>
+      </div>
+      
+      <div class="icono">
+        <label for="Tratamiento"><i class="fas fa-pills"></i> Tratamiento de la enfermedad :</label>
+        <textarea id="Tratamiento" name="tratamiento" placeholder="Introduzca el tratamiento"></textarea>
+      </div>
+      
+      <div class="icono">
+        <label for="Expectativas"><i class="fas fa-calendar-alt"></i> Expectativas de la enfermedad :</label>
+        <textarea id="Expectativas" name="expectativas" placeholder="Introduzca las expectativas"></textarea>
+      </div>
+
+      <input type="submit" value="Buscar">
+      <input type="reset" value="Reset">
+    </form>
+  </main>
+
+  <footer>
+    <p><i>&copy; Enciclopedia Médica. Derechos reservados.</i></p>
+    <p>2024 Marcos Sánchez Rosillo y Cristian Martínez Hernández.</p>
+    <p>Universidad de Alicante - Ingeniería Biomédica</p>
+  </footer>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</body>
+</html>
