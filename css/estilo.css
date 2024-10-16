@@ -78,10 +78,7 @@ list-style-type:square
 
 .contenedor {
 display:flex;
-background-color:#F5F5DC;
 text-align:left;
-border:1px solid #ccc;
-border-radius:10px;
 padding:30px;
 }
 
