@@ -396,6 +396,50 @@ figure img {
     display: block;          /* Asegura que no haya espacio debajo de la imagen */
     border-radius: 5px;      /* Opcional: bordes redondeados */
 }
+
+table {
+        font-size: 14px; /* Reduce el tamaño de fuente */
+    }
+
+    th, td {
+        padding: 10px; /* Reduce el padding para pantallas más pequeñas */
+    }
+
+    thead th:nth-child(1),
+    thead th:nth-child(2),
+    thead th:nth-child(3),
+    thead th:nth-child(5),
+    tbody td {
+        width: auto; /* Permite que las columnas se ajusten automáticamente */
+    }
+
+    tbody tr {
+        display: block; /* Hace que las filas sean bloques para que las columnas puedan ser responsivas */
+        margin-bottom: 10px; /* Espacio entre las filas en pantallas pequeñas */
+    }
+
+    tbody td {
+        display: block;
+        text-align: left; /* Alinea el texto a la izquierda */
+        padding-left: 40%; /* Añade espacio en el lado izquierdo */
+        position: relative;
+    }
+
+    tbody td::before {
+        content: attr(data-label); /* Utiliza atributos de datos personalizados para crear encabezados en celdas */
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-weight: bold;
+    }
+
+    thead {
+        display: none; /* Oculta el encabezado de la tabla en pantallas pequeñas */
+    }
+
+    caption {
+        font-size: 16px; /* Ajusta el tamaño del caption */
+    }
 		
 }
 
