@@ -242,64 +242,7 @@ footer p{
 	color:#fff;
 }
 	
-@media (max-width: 480px) {
-    body {
-        margin: 10px;
-        font-size: 14px;
-    }
 
-    header h1 {
-        font-size: 24px;
-	color: white;    
-    }
-
-    nav ul {
-        flex-direction: column;
-        padding: 0;
-    }
-
-	figure {
-        width: 100%;            
-	max-width: 100%;       
-        margin: 0;             
-	padding: 0;            
-        text-align: center;     
-    }
-
-    figure img {
-        width: 100%;           
-        height: auto;          
-    }
-
-    figcaption {
-        font-size: 12px;      
-        padding: 5px;       
-    }
-
-    .contenedor {
-        flex-direction: column; /* Cambia la dirección del contenedor en pantallas pequeñas */
-        padding: 15px; /* Reduce el padding para pantallas pequeñas */
-    }
-
-    .indice li {
-        float: none; /* Elimina el flotado en pantallas pequeñas */
-        width: 100%; /* Haz que los elementos de la lista ocupen todo el ancho */
-        margin-bottom: 10px; /* Espacio entre elementos */
-    }
-
-    table, th, td {
-        font-size: 12px; /* Reduce el tamaño de fuente de la tabla */
-    }
-    
-    form {
-        width: 90%; /* Aumenta el ancho del formulario en pantallas pequeñas */
-        padding: 10px; /* Reduce el padding */
-    }
-
-    footer {
-        font-size: 12px; /* Reduce el tamaño de fuente del pie de página */
-    }
-}
 
 form {
 	
@@ -414,4 +357,41 @@ overflow:hidden;
 position:static;
 width:auto;
 height:auto;
+}
+
+
+
+
+@media (max-width: 780px) {
+	.indice {
+        flex-direction: column;         
+        align-items: flex-start;         
+    }
+    
+    .indice li {
+        width: 100%;                   
+    }
+	
+	
+	
+    section {
+        flex: 0 1 100%;   
+    }
+	
+figure {
+    display: block;            
+    margin: 0 auto;          
+    width: 100%;             
+    max-width: 100%;         
+    text-align: center;       
+}
+
+figure img {
+    width: 100%;             
+    height: auto;        
+    display: block;         
+    border-radius: 5px;
+}
+
+		
 }
