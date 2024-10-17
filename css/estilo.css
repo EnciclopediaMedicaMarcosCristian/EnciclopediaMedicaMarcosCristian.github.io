@@ -473,7 +473,7 @@ table {
         font-size: 16px; /* Ajusta el tamaño del caption */
     }
 	form {
-        width: 95%;   /* Formulario ocupa casi todo el ancho en pantallas pequeñas */
+        width: 85%;   /* Formulario ocupa casi todo el ancho en pantallas pequeñas */
         padding: 15px; /* Reducir el padding para ahorrar espacio */
         margin: 10px auto; /* Reducir el margen */
     }
