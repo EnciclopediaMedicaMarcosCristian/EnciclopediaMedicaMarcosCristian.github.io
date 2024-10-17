@@ -79,7 +79,7 @@ h1, h2, h3 {
 
 a {
     color: var(--color-enlace);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:focus, a:hover {
