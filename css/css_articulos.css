@@ -60,7 +60,7 @@ margin-top:20px
 
 a {
 color:#145CB9;
-text-decoration:none
+text-decoration:underline;
 }
 
 a:focus,a:hover {
