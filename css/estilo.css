@@ -350,6 +350,21 @@ input[type="reset"] {
 }
 
 @media (max-width: 780px) {
+
+    figure {
+        display: block; /* Comportamiento de bloque */
+        margin: 0 auto; /* Centrar el figure en el contenedor */
+        width: 100%; /* Hacer que el figure ocupe todo el ancho disponible */
+        max-width: 100%; /* Asegurarse de que no se desborde */
+        text-align: center; /* Opcional: centrar el contenido dentro del figure */
+    }
+
+    figure img {
+        width: 100%; /* La imagen ocupará el 100% del ancho del figure */
+        height: auto; /* Mantiene la proporción de la imagen */
+        display: block; /* Asegura que no haya espacio debajo de la imagen */
+        border-radius: 5px; /* Opcional: bordes redondeados */
+    }
     body {
         font-size: 16px; /* Reduce el tamaño de la fuente para pantallas más pequeñas */
         padding: 5px; /* Reduce el padding para dar más espacio al contenido */
@@ -398,20 +413,7 @@ input[type="reset"] {
         margin-bottom: 20px; /* Añade espacio entre los artículos */
     }
 
-    figure {
-        display: block; /* Comportamiento de bloque */
-        margin: 0 auto; /* Centrar el figure en el contenedor */
-        width: 100%; /* Hacer que el figure ocupe todo el ancho disponible */
-        max-width: 100%; /* Asegurarse de que no se desborde */
-        text-align: center; /* Opcional: centrar el contenido dentro del figure */
-    }
-
-    figure img {
-        width: 100%; /* La imagen ocupará el 100% del ancho del figure */
-        height: auto; /* Mantiene la proporción de la imagen */
-        display: block; /* Asegura que no haya espacio debajo de la imagen */
-        border-radius: 5px; /* Opcional: bordes redondeados */
-    }
+    
 
     table {
         font-size: 14px; /* Reduce el tamaño de fuente */
