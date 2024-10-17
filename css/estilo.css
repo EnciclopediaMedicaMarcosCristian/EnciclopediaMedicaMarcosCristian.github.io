@@ -472,6 +472,40 @@ table {
     caption {
         font-size: 16px; /* Ajusta el tamaño del caption */
     }
+	form {
+        width: 95%;   /* Formulario ocupa casi todo el ancho en pantallas pequeñas */
+        padding: 15px; /* Reducir el padding para ahorrar espacio */
+        margin: 10px auto; /* Reducir el margen */
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="email"],
+    input[type="number"],
+    input[type="color"],
+    input[type="range"],
+    select,
+    textarea {
+        width: 100%;  /* Ajusta los inputs para que ocupen todo el ancho del formulario */
+        padding: 8px;  /* Reducir el padding de los inputs */
+        margin-bottom: 10px; /* Reducir margen inferior */
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;   /* Botones ocupan todo el ancho disponible */
+        padding: 12px; /* Aumentar ligeramente el padding para hacer los botones más fáciles de pulsar en dispositivos móviles */
+        font-size: 1em; /* Ajustar tamaño de fuente de los botones */
+    }
+
+    fieldset {
+        margin: 10px 0; /* Reducir márgenes para ahorrar espacio */
+        padding: 8px;   /* Reducir padding */
+    }
+
+    legend {
+        font-size: 1.1em; /* Ajustar tamaño de la leyenda */
+    }
 		
 }
 
