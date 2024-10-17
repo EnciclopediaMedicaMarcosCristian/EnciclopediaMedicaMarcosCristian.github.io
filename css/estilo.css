@@ -1,291 +1,287 @@
-html,body {
-height:100%;
-margin:0
+:root {
+    --color-fondo-principal: #f0f0f0; 
+    --color-texto-principal: #333; /* Texto principal */
+    --color-fondo-encabezado: #cfe7ff; 
+    --color-texto-encabezado: black; 
+    --color-parrafo: #000000; 
+    --color-encabezado: #003369; 
+    --color-enlace: #1a73e8; 
+    --color-hover-enlace: purple; 
+    --color-fondo-indice: #e7f3ff; 
+    --color-borde-indice: #ccc; 
+    --color-fondo-tabla: black; 
+    --color-texto-tabla: #fff; 
+    --color-fondo-impar-filas: #cce7ff; 
+    --color-fondo-par-filas: #b3d9ff; 
+    --color-hover-filas: #f0f0f0; 
+    --color-fondo-aside: #E6E6FA; 
+    --color-borde-aside: #ccc; 
+    --color-fondo-footer: #336699; 
+    --color-texto-footer: #fff; 
+    --color-fondo-formulario: beige; 
+    --color-borde-formulario: black; 
+    --color-input-focus: #cfe7ff; 
+    --color-boton-submit: blue; 
+    --color-boton-reset: black; 
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
 body {
-display:flex;
-flex-direction:column
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: var(--color-fondo-principal);
+    color: var(--color-texto-principal);
+    margin: 0;
+    padding: 10px;
 }
 
 main {
-flex:1
+    flex: 1;
 }
 
 header {
-  background-color: #cfe7ff; /* Fondo claro */
-  text-align: center;  
-  
-}
-header div{
-	text-align:left;
-	margin:10px;
-	
+    background-color: var(--color-fondo-encabezado); /* Fondo claro */
+    text-align: center;
 }
 
-header a{
-	color:black;
-	
+header div {
+    text-align: left;
+    margin: 10px;
 }
 
-
+header a {
+    color: var(--color-texto-encabezado);
+}
 
 header h1, header img {
-  text-align: center;
-}
-
-
-body {
-font-family:Arial,Helvetica,sans-serif;
-font-size:18px;
-line-height:1.5;
-background-color:#f0f0f0;
-color:#333;
-margin:0;
-padding:10px
+    text-align: center;
 }
 
 p {
-	
-margin-top:5px;
-margin-bottom:20px;
-color: #000000;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: var(--color-parrafo);
 }
 
-h1,h2,h3 {
-font-family:"Georgia",Helvetica,sans-serif;
-color:#003369;
-margin-bottom:10px;
-margin-top:20px
+h1, h2, h3 {
+    font-family: "Georgia", Helvetica, sans-serif;
+    color: var(--color-encabezado);
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 a {
-	
-color:#145CB9;
-text-decoration:none
+    color: var(--color-enlace);
+    text-decoration: none;
 }
 
-a:focus,a:hover {
-color:purple;
-text-decoration:underline;
-outline:3px solid #fc0
+a:focus, a:hover {
+    color: var(--color-hover-enlace);
+    text-decoration: underline;
+    outline: 3px solid #fc0;
 }
 
 ul {
-list-style-type:square
+    list-style-type: square;
 }
 
-
 .contenedor {
-display:flex;
-text-align:left;
-padding:30px;
+    display: flex;
+    text-align: left;
+    padding: 30px;
 }
 
 .contenedor div {
-flex:1
+    flex: 1;
 }
-
 
 .centrar {
-text-align:center
+    text-align: center;
 }
 
-
-
 .indice li {
-float:left;
-background-color:#e7f3ff;
-border:1px solid #ccc;
-border-radius:10px;
-list-style-type:none;
-margin:0;
-padding:0;
-margin:5px;
-padding:5px;
+    float: left;
+    background-color: var(--color-fondo-indice);
+    border: 1px solid var(--color-borde-indice);
+    border-radius: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin: 5px;
+    padding: 5px;
 }
 
 .indice a {
-color:#036;
-padding: 10px;
-border-radius:4px
+    color: #036;
+    padding: 10px;
+    border-radius: 4px;
 }
 
-.indice a:hover,.indice a:focus {
-background-color:#b3d7ff;
-outline:none
+.indice a:hover, .indice a:focus {
+    background-color: #b3d7ff;
+    outline: none;
 }
-
 
 table {
-table-layout:fixed;
-width:100%
+    table-layout: fixed;
+    width: 100%;
 }
 
 .medicamento thead th:nth-child(1) {
-width:10%
+    width: 10%;
 }
 
 .medicamento thead th:nth-child(2) {
-width:15%
+    width: 15%;
 }
 
 .medicamento thead th:nth-child(3) {
-width:20%
+    width: 20%;
 }
 
 .medicamento thead th:nth-child(5) {
-width:15%
+    width: 15%;
 }
 
 thead th:nth-child(1) {
-width:13%
+    width: 13%;
 }
 
 thead th:nth-child(2) {
-width:30%
+    width: 30%;
 }
 
 thead th:nth-child(3) {
-width:25%
+    width: 25%;
 }
 
-th,td {
-padding:20px;
-text-align:center
+th, td {
+    padding: 20px;
+    text-align: center;
 }
 
-table,tr,th,td {
-border-collapse:collapse;
-border:3px solid #369
+table, tr, th, td {
+    border-collapse: collapse;
+    border: 3px solid #369;
 }
 
-thead th,tfoot th,caption {
-font-family:Arial,Helvetica,sans-serif
+thead th, tfoot th, caption {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 caption {
-font-variant:small-caps
+    font-variant: small-caps;
 }
 
 th {
-background-color:black;
-color:#fff
+    background-color: var(--color-fondo-tabla);
+    color: var(--color-texto-tabla);
 }
 
 tbody tr:nth-child(odd) {
-background-color:#cce7ff
+    background-color: var(--color-fondo-impar-filas);
 }
 
 tbody tr:nth-child(even) {
-background-color:#b3d9ff
+    background-color: var(--color-fondo-par-filas);
 }
 
 tbody tr:hover {
-background-color:#f0f0f0
+    background-color: var(--color-hover-filas);
 }
 
-
 aside {
-background-color:#E6E6FA;
-padding:20px;
-margin-top:40px;
-margin-bottom:20px;
-border:1px solid #ccc;
-border-radius:20px
+    background-color: var(--color-fondo-aside);
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-borde-aside);
+    border-radius: 20px;
 }
 
 aside h2 {
-text-align:center;
-margin-bottom:20px;
-margin-top:10px
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
-
-
 
 aside .dividir-articulos {
-display:flex;
-justify-content:space-between;
-gap:20px
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
-
 
 aside article {
-flex:1;
-padding:10px;
-background-color:#fff;
-border:1px solid #ccc;
-border-radius:5px
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-
 footer {
-background-color:#336699;
-padding:15px;
-text-align:center;
-font-size:14px
+    background-color: var(--color-fondo-footer);
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
 }
 
 footer a {
-color:white;
-font-size:14px;
-text-decoration:underline;
-outline:none
+    color: var(--color-texto-footer);
+    font-size: 14px;
+    text-decoration: underline;
+    outline: none;
 }
 
 footer a:hover {
-color: #000; 
+    color: white;
 }
 
-
-footer p{
-	color:#fff;
+footer p {
+    color: var(--color-texto-footer);
 }
-	
-
 
 form {
-	
-    
-
-     
-      width: 80%;
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background: beige;
-      border-radius: 8px;
-	  border: 3px solid black;
-	  
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--color-fondo-formulario);
+    border-radius: 8px;
+    border: 3px solid var(--color-borde-formulario);
 }
-    
 
-   
-   form h2 {
-      text-align: center;
-    }
+form h2 {
+    text-align: center;
+}
 
-    label {
-      display: block;
-      margin: 10px;
-    }
+label {
+    display: block;
+    margin: 10px;
+}
 
-    input[type="text"],
-    input[type="date"],
-    input[type="email"],
-    input[type="number"],
-    input[type="color"],
-    input[type="range"],
-    select,
-    textarea {
-      width: 90%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid grey;
-      border-radius: 4px;
-    }
-	
-	
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="color"],
+input[type="range"],
+select,
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
 input[type="text"]:focus,
 input[type="date"]:focus,
 input[type="email"]:focus,
@@ -294,118 +290,106 @@ input[type="color"]:focus,
 input[type="range"]:focus,
 select:focus,
 textarea:focus {
-  
-  background-color: #cfe7ff; /* Verde claro */
+    background-color: var(--color-input-focus); /* Color al hacer focus en inputs */
 }
 
-    textarea {
-      height: 100px;
-    }
+textarea {
+    height: 100px;
+}
 
-    fieldset {
-      border: 1px solid grey;
-      padding: 10px;
-      margin: 20px;
-    }
+fieldset {
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 20px;
+}
 
-    legend {
-      font-weight: bold;
-    }
+legend {
+    font-weight: bold;
+}
 
-    .icono {
-  position: relative;
-  margin-bottom: 8px;
+.icono {
+    position: relative;
+    margin-bottom: 8px;
 }
 
 .icono i {
-  margin-right: 8px; /* Aumenta el espacio entre el icono y el texto */
-  color: blue;
-  font-size: 16px;
-  vertical-align: middle; /* Alinea el icono con el texto */
-}
-	
-    input[type="submit"],
-    input[type="reset"] {
-      background-color: blue;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 4px;
-      cursor: pointer;
-      margin: 5px;
-    }
-
-    input[type="reset"] {
-      background-color: black;
-    }nd-color: grey;
-    }
-	
-
-#skip a
-{
-	
-position:absolute;
-left:-10000px;
-top:auto;
-width:1px;
-height:1px;
-overflow:hidden;
-}
- 
-#skip a:focus
-{
-position:static;
-width:auto;
-height:auto;
+    margin-right: 8px; /* Aumenta el espacio entre el icono y el texto */
+    color: blue;
+    font-size: 16px;
+    vertical-align: middle; /* Alinea el icono con el texto */
 }
 
+input[type="submit"],
+input[type="reset"] {
+    background-color: var(--color-boton-submit); /* Color del botón de envío */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
 
+input[type="reset"] {
+    background-color: var(--color-boton-reset); /* Color del botón de reset */
+}
 
+#skip a {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 
+#skip a:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
 
 @media (max-width: 780px) {
-
-	
-
-	 body {
+    body {
         font-size: 16px; /* Reduce el tamaño de la fuente para pantallas más pequeñas */
-        padding: 5px;    /* Reduce el padding para dar más espacio al contenido */
+        padding: 5px; /* Reduce el padding para dar más espacio al contenido */
     }
-    
+
     h1, h2, h3 {
         font-size: 1.2em; /* Ajuste del tamaño de los encabezados en pantallas pequeñas */
         margin-top: 10px;
         margin-bottom: 5px;
     }
-    
+
     p {
-        font-size: 0.9em;  /* Disminuye ligeramente el tamaño del texto de los párrafos */
+        font-size: 0.9em; /* Disminuye ligeramente el tamaño del texto de los parrafos */
         margin-bottom: 15px; /* Ajusta los márgenes para dar más espacio vertical */
     }
-    
+
     ul {
-        padding-left: 20px;  /* Ajuste del padding en listas no ordenadas */
+        padding-left: 20px; /* Ajuste del padding en listas no ordenadas */
     }
-    
+
     a {
         font-size: 0.95em; /* Ajuste del tamaño de los enlaces */
     }
-    
+
     /* Asegurarse de que el contenido no se desborde horizontalmente */
     body, html {
         width: 100%;
         overflow-x: hidden;
     }
+
     .contenedor {
         flex-direction: column; /* Cambia la dirección a columna */
     }
-    
+
     .contenedor div {
         width: 100%; /* Asegura que cada div ocupe el 100% del contenedor */
         margin: 0 0 10px 0; /* Añade margen inferior entre los divs */
     }
-	
-	 aside .dividir-articulos {
+
+    aside .dividir-articulos {
         flex-direction: column; /* Cambia a disposición vertical */
     }
 
@@ -413,23 +397,23 @@ height:auto;
         width: 100%; /* Cada artículo ocupa el 100% del ancho */
         margin-bottom: 20px; /* Añade espacio entre los artículos */
     }
-	
-figure {
-    display: block;            /* Comportamiento de bloque */
-    margin: 0 auto;          /* Centrar el figure en el contenedor */
-    width: 100%;             /* Hacer que el figure ocupe todo el ancho disponible */
-    max-width: 100%;         /* Asegurarse de que no se desborde */
-    text-align: center;       /* Opcional: centrar el contenido dentro del figure */
-}
 
-figure img {
-    width: 100%;             /* La imagen ocupará el 100% del ancho del figure */
-    height: auto;            /* Mantiene la proporción de la imagen */
-    display: block;          /* Asegura que no haya espacio debajo de la imagen */
-    border-radius: 5px;      /* Opcional: bordes redondeados */
-}
+    figure {
+        display: block; /* Comportamiento de bloque */
+        margin: 0 auto; /* Centrar el figure en el contenedor */
+        width: 100%; /* Hacer que el figure ocupe todo el ancho disponible */
+        max-width: 100%; /* Asegurarse de que no se desborde */
+        text-align: center; /* Opcional: centrar el contenido dentro del figure */
+    }
 
-table {
+    figure img {
+        width: 100%; /* La imagen ocupará el 100% del ancho del figure */
+        height: auto; /* Mantiene la proporción de la imagen */
+        display: block; /* Asegura que no haya espacio debajo de la imagen */
+        border-radius: 5px; /* Opcional: bordes redondeados */
+    }
+
+    table {
         font-size: 14px; /* Reduce el tamaño de fuente */
     }
 
@@ -472,41 +456,5 @@ table {
     caption {
         font-size: 16px; /* Ajusta el tamaño del caption */
     }
-	form {
-        width: 85%;   /* Formulario ocupa casi todo el ancho en pantallas pequeñas */
-        padding: 15px; /* Reducir el padding para ahorrar espacio */
-        margin: 10px auto; /* Reducir el margen */
-    }
-
-    input[type="text"],
-    input[type="date"],
-    input[type="email"],
-    input[type="number"],
-    input[type="color"],
-    input[type="range"],
-    select,
-    textarea {
-        width: 100%;  /* Ajusta los inputs para que ocupen todo el ancho del formulario */
-        padding: 8px;  /* Reducir el padding de los inputs */
-        margin-bottom: 10px; /* Reducir margen inferior */
-    }
-
-    input[type="submit"],
-    input[type="reset"] {
-        width: 100%;   /* Botones ocupan todo el ancho disponible */
-        padding: 12px; /* Aumentar ligeramente el padding para hacer los botones más fáciles de pulsar en dispositivos móviles */
-        font-size: 1em; /* Ajustar tamaño de fuente de los botones */
-    }
-
-    fieldset {
-        margin: 10px 0; /* Reducir márgenes para ahorrar espacio */
-        padding: 8px;   /* Reducir padding */
-    }
-
-    legend {
-        font-size: 1.1em; /* Ajustar tamaño de la leyenda */
-    }
-		
 }
-
 
