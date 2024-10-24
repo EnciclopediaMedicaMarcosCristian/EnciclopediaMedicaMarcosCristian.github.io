@@ -1,0 +1,35 @@
+@import url("estilo.css"); 
+
+:root {
+    --color-fondo-principal: #1a1a1a; 
+    --color-texto-principal: #f0f0f0; 
+    --color-fondo-encabezado: #003366; 
+    --color-encabezado: #cfe7ff; 
+    --color-enlace: #6699ff; 
+    --color-hover-enlace: #bb33ff; 
+    --color-fondo-indice: #2a3d55; 
+    --color-negro: #fff; 
+    --color-fondo-aside: #2e2e3f; 
+    --color-fondo-footer: #1a1a33; 
+    --color-gris-claro: #555; 
+    --color-blanco: #e0e0e0;
+    --color-fondo-formulario: #3c3c3c; 
+    --color-boton-submit: #4d88ff; 
+	--color-blanco-article:black;
+	--color-fila-impar: #2a3b4d;
+	--color-fila-par: #1e2b39;
+	--color-hover-tabla: #3c4f63;
+	--color-blanco-footer:#e0e0e0;
+
+}
+
+
+
+img {
+    filter: invert(1); 
+}
+
+
+.invertida {
+    filter: invert(1);
+}
