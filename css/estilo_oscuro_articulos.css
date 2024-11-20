@@ -1,0 +1,20 @@
+@import url("css_articulos.css"); 
+
+:root {
+	--color-fondo-encabezado: #003366; 
+    --color-fondo-primario: #1e1e1e; 
+    --color-texto-primario: #ccd1ff; 
+    --color-fondo-cuerpo: #121212; 
+    --color-texto-parrafo: #ffffff; 
+    --color-enlace: #5398ff;  
+    --color-outline-hover: #ffa500; 
+    --color-fondo-footer: #0a3d62; 
+    --color-texto-footer: #e0e0e0; 
+    
+}
+
+
+
+.invertida {
+    filter: invert(1);
+}

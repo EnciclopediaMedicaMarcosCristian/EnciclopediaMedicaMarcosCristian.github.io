@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+ <head>
+ <meta charset="utf-8">
+ <title>Formulario Contacto. Enciclopedia Virtual de Medicina</title>
+ <link href="../css/estilo.css" rel="stylesheet" title="Estilo por defecto">
+ <link href="../css/estiloImpresion.css" rel = "stylesheet" media="print">
+ <link href="../css/estiloLetraGrande.css" rel = "alternate stylesheet" media="screen" title="Letra Grande">
+ <link href="../css/estiloLetraGrandeYAltoContraste.css" rel = "alternate stylesheet" media="screen" title="Alto Contraste y Letra Grande">
+ <link href="../css/estilo-oscuro.css" rel = "alternate stylesheet" media="screen" title="Tema oscuro">
+ <link href="../css/altoContraste.css" rel = "alternate stylesheet" media="screen" title="Alto contraste">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <meta name= "viewport" content="width=device-width,initial-scale=1.0"/>
+
+
+ </head>
+ <body>
+  <header>
+   <div id="skip"><a href="#content">Saltar al contenido principal</a></div>
+    <h1>Enciclopedia Virtual de Medicina</h1>
+    <a href="../index.html">
+      <img src="../imagenes/logoMedline.jpg" alt="logo de la enciclopedia médica de MedlinePlus">
+    </a>
+  </header>
+
+  <main id="content">
+    <nav>
+      <p>Estás en: 
+        <a href="../index.html">Página principal</a> >
+        <a href="../formulario/formularioContacto.html">Formulario de Contacto</a>
+      </p>
+    </nav>
+    
+    
+    
+    <form action="paginaRespuestaFormulario.html" method="get">
+	<h2>Formulario de Contacto</h2>
+    <p>Rellene los siguientes campos para realizar el formulario. Los campos obligatorios están marcados con (*)</p>
+	
+      <div class="icono">
+        <label for="asunto"><i class="fas fa-envelope"></i> Asunto (*) :</label>
+        <input type="text" id="asunto" name="asunto" placeholder="Introduzca el asunto" required>
+      </div>
+
+      <div class="icono">
+        <label for="comentario"><i class="fas fa-comment"></i> Comentario (*) :</label>
+        <textarea id="comentario" name="comentario" placeholder="Introduzca su comentario" required></textarea>
+      </div>
+
+      <div>
+        <label for="rol"><i class="fas fa-user"></i> Yo soy:</label>
+        <select id="rol" name="rol">
+          <option value="">Seleccione una opción</option>
+          <option value="Paciente">Paciente</option>
+          <option value="Científico">Científico</option>
+          <option value="Médico">Médico</option>
+          <option value="Educador">Educador</option>
+          <option value="Fabricante">Fabricante</option>
+          <option value="Periodista">Periodista</option>
+        </select>
+      </div>
+
+      <div class="icono">
+        <label for="fecha-nacimiento"><i class="fas fa-calendar-alt"></i> Fecha de nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+      </div>
+
+      <fieldset>
+        <legend><i class="fas fa-venus-mars"></i> Sexo (*) :</legend>
+        <div>
+          <label for="sexo-hombre"><input type="radio" id="sexo-hombre" name="sexo" value="hombre" required> Hombre</label>
+        </div>
+        <div>
+          <label for="sexo-mujer"><input type="radio" id="sexo-mujer" name="sexo" value="mujer"> Mujer</label>
+        </div>
+        <div>
+          <label for="sexo-otro"><input type="radio" id="sexo-otro" name="sexo" value="otro"> Otro</label>
+        </div>
+      </fieldset>
+
+      <div class="icono">
+        <label for="correo-electronico">📧 Correo electrónico:</label>
+        <input type="email" id="correo-electronico" name="correo-electronico" placeholder="Introduzca su correo electrónico">
+      </div>
+
+      <div class="icono">
+        <label for="informacion">ℹ️ Deseo recibir más información <input type="checkbox" id="informacion" name="informacion"></label>
+      </div>
+      
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Reset">
+    </form>
+  </main>
+
+  <footer>
+    <p><i>&copy; Enciclopedia Médica. Derechos reservados.</i></p>
+    <p>2024 Marcos Sánchez Rosillo y Cristian Martínez Hernández.</p>
+	<p><a href = "../accesibilidad/accesibilidad.html">Accesibilidad</a></p>
+    <p>Universidad de Alicante - Ingeniería Biomédica</p>
+  </footer>
+</body>
+</html>

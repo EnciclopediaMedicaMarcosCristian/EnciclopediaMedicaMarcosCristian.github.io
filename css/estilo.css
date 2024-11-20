@@ -1,0 +1,438 @@
+:root {
+    --color-fondo-principal: #f0f0f0; 
+    --color-texto-principal: #333; 
+    --color-fondo-encabezado: #cfe7ff; 
+    --color-encabezado: #003369; 
+    --color-enlace: #0033cc; 
+    --color-hover-enlace: purple; 
+    --color-fondo-indice: #e7f3ff; 
+    --color-negro: #000; 
+    --color-fondo-aside: #E6E6FA; 
+    --color-fondo-footer: #336699; 
+    --color-gris-claro: #ccc; 
+    --color-blanco: #fff; 
+    --color-fondo-formulario: beige; 
+    --color-boton-submit: blue; 
+	--color-blanco-article:#fff;
+	--color-fila-impar:#cce7ff;
+	--color-fila-par:#b3d9ff;
+	--color-hover-tabla:#f0f0f0;
+	--color-blanco-footer:#fff;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: var(--color-fondo-principal);
+    color: var(--color-texto-principal);
+    margin: 0;
+    padding: 10px;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background-color: var(--color-fondo-encabezado); 
+    text-align: center;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: var(--color-texto-principal); /* Usar variable para negro directamente */
+}
+
+h1, h2, h3 {
+    font-family: "Georgia", Helvetica, sans-serif;
+    color: var(--color-encabezado);
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+a {
+    color: var(--color-enlace);
+    text-decoration: underline;
+}
+
+a:focus, a:hover {
+    color: var(--color-hover-enlace);
+    text-decoration: underline;
+    outline: 3px solid #fc0;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.contenedor {
+    display: flex;
+    text-align: left;
+    padding: 30px;
+}
+
+.contenedor div {
+    flex: 1;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.indice li {
+    float: left;
+    background-color: var(--color-fondo-indice);
+    border-radius: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin: 5px;
+    padding: 5px;
+}
+
+.indice a {
+    color: var(--color-enlace);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.indice a:hover, .indice a:focus {
+    background-color: #b3d7ff;
+    outline: none;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.medicamento thead th:nth-child(1) {
+    width: 10%;
+}
+
+.medicamento thead th:nth-child(2) {
+    width: 15%;
+}
+
+.medicamento thead th:nth-child(3) {
+    width: 20%;
+}
+
+.medicamento thead th:nth-child(5) {
+    width: 15%;
+}
+
+thead th:nth-child(1) {
+    width: 13%;
+}
+
+thead th:nth-child(2) {
+    width: 30%;
+}
+
+thead th:nth-child(3) {
+    width: 25%;
+}
+
+th, td {
+    padding: 20px;
+    text-align: center;
+}
+
+table, tr, th, td {
+    border-collapse: collapse;
+    border: 3px solid var(--color-negro); /* Usar variable para el borde de la tabla */
+}
+
+thead th, tfoot th, caption {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+caption {
+    font-variant: small-caps;
+}
+
+th {
+    background-color:black; /* Asignar color negro directamente */
+    color: white; /* Cambiar texto a la variable blanco */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--color-fila-impar); 
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--color-fila-par); 
+}
+
+tbody tr:hover {
+    background-color: var(--color-hover-tabla); 
+}
+
+aside {
+    background-color: var(--color-fondo-aside);
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-gris-claro); 
+    border-radius: 20px;
+}
+
+aside h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+aside .dividir-articulos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+aside article {
+    flex: 1;
+    padding: 10px;
+    background-color: var(--color-blanco-article); 
+    border: 1px solid var(--color-gris-claro); 
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--color-fondo-footer);
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: var(--color-blanco-footer); /* Usar la variable para blanco */
+    font-size: 14px;
+    text-decoration: underline;
+    outline: none;
+}
+
+footer a:hover {
+    color: var(--color-blanco); /* Usar la variable para blanco */
+}
+
+footer p {
+    color: var(--color-blanco-footer); /* Usar la variable para blanco */
+}
+
+form {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--color-fondo-formulario);
+	    border: 3px solid var(--color-negro);
+    border-radius: 8px;
+}
+
+form h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="color"],
+input[type="range"],
+select,
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="color"]:focus,
+input[type="range"]:focus,
+select:focus,
+textarea:focus {
+    background-color: var(--color-input-focus); /* Color al hacer focus en inputs */
+}
+
+textarea {
+    height: 100px;
+}
+
+fieldset {
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 20px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.icono {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.icono i {
+    margin-right: 8px; /* Aumenta el espacio entre el icono y el texto */
+    color: blue;
+    font-size: 16px;
+    vertical-align: middle; /* Alinea el icono con el texto */
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: var(--color-boton-submit); /* Color del botón de envío */
+    color: var(--color-blanco); /* Cambiado a la nueva variable */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#skip a {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#skip a:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+
+
+@media (max-width: 780px) {
+    body {
+        font-size: 16px; /* Reduce el tamaño de la fuente para pantallas más pequeñas */
+        padding: 5px; /* Reduce el padding para dar más espacio al contenido */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2em; /* Ajuste del tamaño de los encabezados en pantallas pequeñas */
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 0.9em; /* Disminuye ligeramente el tamaño del texto de los parrafos */
+        margin-bottom: 15px; /* Ajusta los márgenes para dar más espacio vertical */
+    }
+
+    ul {
+        padding-left: 20px; /* Ajuste del padding en listas no ordenadas */
+    }
+
+    a {
+        font-size: 0.95em; /* Ajuste del tamaño de los enlaces */
+    }
+
+    /* Asegurarse de que el contenido no se desborde horizontalmente */
+    body, html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .contenedor {
+        flex-direction: column; /* Cambia la dirección a columna */
+    }
+
+    .contenedor div {
+        width: 100%; /* Asegura que cada div ocupe el 100% del contenedor */
+        margin: 0 0 10px 0; /* Añade margen inferior entre los divs */
+    }
+
+    aside .dividir-articulos {
+        flex-direction: column; /* Cambia a disposición vertical */
+    }
+
+    aside article {
+        width: 100%; /* Cada artículo ocupa el 100% del ancho */
+        margin-bottom: 20px; /* Añade espacio entre los artículos */
+    }
+
+    figure {
+        display: block; /* Comportamiento de bloque */
+        margin: 0 auto; /* Centrar el figure en el contenedor */
+        width: 100%; /* Hacer que el figure ocupe todo el ancho disponible */
+        max-width: 100%; /* Asegurarse de que no se desborde */
+        text-align: center; /* Opcional: centrar el contenido dentro del figure */
+    }
+
+    figure img {
+        width: 100%; /* La imagen ocupará el 100% del ancho del figure */
+        height: auto; /* Mantiene la proporción de la imagen */
+        display: block; /* Asegura que no haya espacio debajo de la imagen */
+        border-radius: 5px; /* Opcional: bordes redondeados */
+    }
+
+    table {
+        font-size: 14px; 
+    }
+
+    th, td {
+        padding: 10px; 
+    }
+
+    thead th:nth-child(1),
+    thead th:nth-child(2),
+    thead th:nth-child(3),
+    thead th:nth-child(5),
+    tbody td {
+        width: auto; 
+    }
+
+    tbody tr {
+        display: block; 
+        margin-bottom: 10px; 
+    }
+
+    tbody td {
+        display: block;
+        text-align: left; 
+        padding-left: 40%; 
+        position: relative;
+    }
+
+    tbody td::before {
+        content: attr(data-label); /* Utiliza atributos de datos personalizados para crear encabezados en celdas */
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-weight: bold;
+    }
+
+    thead {
+        display: none; /* Oculta el encabezado de la tabla en pantallas pequeñas */
+    }
+
+    caption {
+        font-size: 16px; /* Ajusta el tamaño del caption */
+    }
+}

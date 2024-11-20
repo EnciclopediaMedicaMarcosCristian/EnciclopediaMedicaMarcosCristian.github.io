@@ -1,0 +1,25 @@
+@import url("css_articulos.css");
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+  
+body {
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 2em !important;
+	
+}
+
+:root {
+	--color-fondo-encabezado: #000000;
+     --color-fondo-primario: #000000; 
+    --color-texto-primario: #ffffff; 
+    --color-fondo-cuerpo: #333333; 
+    --color-texto-parrafo: #ffffff; 
+    --color-enlace: #ffcc00; 
+    --color-outline-hover: #ffcc00; 
+    --color-fondo-footer: #003369;
+    --color-texto-footer: #ffffff;
+    
+}
+
+img{
+    filter: invert(1);
+}
